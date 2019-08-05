@@ -9,36 +9,43 @@
 </head>
 <body>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <input type="text" name="firstNumber"/>First operand<br>
+    <input type="text" name="firstNumber"/>x<br>
     <select name="action">
         <option value="+">Cong</option>
         <option value="-">Tru</option>
         <option value="*">Nhan</option>
         <option value="/">Chia</option>
     </select><br>
-    <input type="text" name="secondNumber"/>Second operand<br>
+    <input type="text" name="secondNumber"/>y<br>
     <input type="submit" id="submit" value="Calculator"/>
 </form>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstNumber = $_POST["firstNumber"];
-    $secondNumber = $_POST["secondNumber"];
+    $x = $_POST["firstNumber"];
+    $y = $_POST["secondNumber"];
     $action = $_POST["action"];
-    switch ($action) {
-        case "+":
-            $result = $firstNumber + $secondNumber;
-            break;
-        case "-":
-            $result = $firstNumber - $secondNumber;
-            break;
-        case "*":
-            $result = $firstNumber * $secondNumber;
-            break;
-        case "/":
-            $result = $firstNumber / $secondNumber;
-            break;
+
+    if ($y == 0) {
+        echo "Xảy ra ngoại lệ";
+    } else if ($x==0 && $y == 0) {
+        echo "Xảy ra ngoại lệ";
+    } else {
+        switch ($action) {
+            case "+":
+                $result = $x + $y;
+                break;
+            case "-":
+                $result = $x - $y;
+                break;
+            case "*":
+                $result = $x * $y;
+                break;
+            case "/":
+                $result = $x / $y;
+                break;
+        }
+        echo $x . $action . $y . "=" . $result;
     }
-    echo $firstNumber . $action . $secondNumber . "=" . $result;
 }
 ?>
 </body>
