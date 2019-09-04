@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="258907e9-43ac-496e-9774-40c153c09e2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cities/.idea/cities.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/.idea/cities.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/.phpintel/bedb69f3956a15f40676987a6a6b6573" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/.phpintel/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/app/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/app/City.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/app/Http/Controllers/CityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/database/migrations/2019_08_27_065105_create_table_cities.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/database/seeds/Cityseeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/resources/views/city/list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cities/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../cities/routes/web.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1QJpwb4ahhydNrwI8FKpHHLAVJi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel-RESTful-api" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="258907e9-43ac-496e-9774-40c153c09e2b" name="Default Changelist" comment="" />
+      <created>1567498792235</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567498792235</updated>
+      <workItem from="1567498793312" duration="37000" />
+    </task>
+    <servers />
+  </component>
+</project>
