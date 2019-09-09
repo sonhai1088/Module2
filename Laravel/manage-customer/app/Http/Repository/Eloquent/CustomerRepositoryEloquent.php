@@ -12,7 +12,7 @@ class CustomerRepositoryEloquent implements RepositoryInterface
 
     public function getAll()
     {
-        return Customer::all();
+        return Customer::paginate(5);
     }
 
     public function store($customer)
