@@ -12,7 +12,7 @@
             </a>
             <div class="col-6">
 
-                <form class="navbar-form navbar-left" action="">
+                <form class="navbar-form navbar-left" action="{{route('customers.search')}}">
 
                     @csrf
 
@@ -22,7 +22,7 @@
 
                             <div class="form-group">
 
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input name = 'keyword' type="text" class="form-control" placeholder="Search">
 
                             </div>
 
@@ -30,7 +30,7 @@
 
                         <div class="col-4">
 
-                            <button type="submit" class="btn btn-default">Tìm kiếm</button>
+                            <button class="btn btn-default" type="submit">Tìm kiếm</button>
 
                         </div>
 

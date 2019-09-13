@@ -9,6 +9,10 @@ class Customer extends Model
 {
     protected $table = 'customer';
 
+    public static function where(string $string, string $string1, string $string2)
+    {
+    }
+
     public function city(){
         return $this->belongsTo('App\City');
     }

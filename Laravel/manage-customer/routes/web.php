@@ -34,4 +34,5 @@ Route::group(['prefix' => 'cities'], function () {
     Route::get('/{id}/edit','CityController@edit')->name('cities.edit');
     Route::post('/{id}/edit', 'CityController@edit')->name('cities.store');
     Route::get('/{id}/delete','CityController@destroy')->name('cities.destroy');
+
 });

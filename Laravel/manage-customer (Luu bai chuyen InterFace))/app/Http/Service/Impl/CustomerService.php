@@ -29,7 +29,7 @@ class CustomerService implements CustomerServiceInterface
         $customer->email = $request->input('email');
         $customer->dob = $request->input('dob');
 
-        $this->customerRepository->store($customer);
+        $this->customerRepository->save($customer);
     }
     public function findByID($id){
         return $this->customerRepository->findByID($id);
@@ -41,6 +41,8 @@ class CustomerService implements CustomerServiceInterface
         $customer->name = $request->input('name');
         $customer->email = $request->input('email');
         $customer->dob = $request->input('dob');
+
+//        $this->customerRepository->save($customer);
     }
 
     public function delete($id)

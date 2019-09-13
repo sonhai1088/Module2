@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Product;
-use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ProductController extends Controller
 {
     public function index()
     {
         $products = Product::all();
-        return view('index');
+        return view('index', compact('products'));
     }
     public function show($id)
     {
@@ -28,6 +28,6 @@ class ProductController extends Controller
         $product = Product::find($id);
 
         // Trả về view
-        return view('show', compact(['product']));
+        return view('show', compact('product'));
     }
 }

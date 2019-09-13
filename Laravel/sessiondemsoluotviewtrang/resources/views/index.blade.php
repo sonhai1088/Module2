@@ -5,7 +5,6 @@
 <div class="title m-b-md">
     Danh sách sản phẩm
 </div>
-
 <div class="row">
 
     <!-- Kiểm tra biến $products được truyền sang từ ProductController -->

@@ -86,12 +86,29 @@ class CustomerController extends Controller
 
     public function search(Request $request)
     {
+//        $keyword = $request->input('keyword');
+//        if (!$keyword) {
+//            return redirect()->route('customers.index');
+//        }
+//
+//        $customers = Customer::where('name', 'LIKE', '%' . $keyword . '%')->paginate(5);
+//        dd($customers);
+//
+//        $cities = City::all();
+////        dd($keyword);
+//        return view('customers.list', compact('customers', 'cities'));
+
         $keyword = $request->input('keyword');
+
         if (!$keyword) {
+
             return redirect()->route('customers.index');
+
         }
-        $customers = Customer::where('name', 'LIKE', '%' . $keyword . '%')->
-        paginate(5);
+
+        $customers = Customer::where('name', 'LIKE', '%' . $keyword . '%')->paginate(5);
+
+
         $cities = City::all();
 
         return view('customers.list', compact('customers', 'cities'));

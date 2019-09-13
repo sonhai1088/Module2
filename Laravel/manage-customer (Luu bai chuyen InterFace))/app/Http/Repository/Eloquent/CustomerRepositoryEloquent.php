@@ -15,7 +15,7 @@ class CustomerRepositoryEloquent implements RepositoryInterface
         return Customer::all();
     }
 
-    public function store($customer)
+    public function save($customer)
     {
         $customer->save();
     }
@@ -25,13 +25,9 @@ class CustomerRepositoryEloquent implements RepositoryInterface
         return Customer::FindOrFail($id);
     }
 
-    public function update($customer)
-    {
-        $customer->save();
-    }
-
     public function delete($customer)
     {
         $customer->delete();
     }
+
 }
